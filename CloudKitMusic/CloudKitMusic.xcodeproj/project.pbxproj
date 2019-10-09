@@ -13,6 +13,8 @@
 		D77C3D7A234D08920012678E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77C3D78234D08920012678E /* Main.storyboard */; };
 		D77C3D7C234D08930012678E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77C3D7B234D08930012678E /* Assets.xcassets */; };
 		D77C3D7F234D08930012678E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77C3D7D234D08930012678E /* LaunchScreen.storyboard */; };
+		D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */; };
+		D77C3D89234D26010012678E /* FuncionamentoGravacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D88234D26010012678E /* FuncionamentoGravacao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D77C3D7B234D08930012678E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77C3D7E234D08930012678E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77C3D80234D08930012678E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		D77C3D88234D26010012678E /* FuncionamentoGravacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuncionamentoGravacao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				D77C3D72234D08920012678E /* AppDelegate.swift */,
 				D77C3D74234D08920012678E /* SceneDelegate.swift */,
 				D77C3D76234D08920012678E /* ViewController.swift */,
+				D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */,
 				D77C3D78234D08920012678E /* Main.storyboard */,
 				D77C3D7B234D08930012678E /* Assets.xcassets */,
 				D77C3D7D234D08930012678E /* LaunchScreen.storyboard */,
 				D77C3D80234D08930012678E /* Info.plist */,
+				D77C3D88234D26010012678E /* FuncionamentoGravacao.swift */,
 			);
 			path = CloudKitMusic;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				D77C3D77234D08920012678E /* ViewController.swift in Sources */,
 				D77C3D73234D08920012678E /* AppDelegate.swift in Sources */,
+				D77C3D89234D26010012678E /* FuncionamentoGravacao.swift in Sources */,
+				D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */,
 				D77C3D75234D08920012678E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
