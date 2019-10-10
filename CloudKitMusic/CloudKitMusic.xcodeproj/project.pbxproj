@@ -19,6 +19,9 @@
 		D77C3D95234F6D0F0012678E /* statusRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D94234F6D0F0012678E /* statusRecorder.swift */; };
 		D77C3D97234F6D580012678E /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D96234F6D580012678E /* Permission.swift */; };
 		D77C3D99234F6DBE0012678E /* getDocumentWhistler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D98234F6DBE0012678E /* getDocumentWhistler.swift */; };
+		D77C3D9B234FA0050012678E /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */; };
+		D77C3D9D234FA48F0012678E /* AddComentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */; };
+		D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		D77C3D94234F6D0F0012678E /* statusRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statusRecorder.swift; sourceTree = "<group>"; };
 		D77C3D96234F6D580012678E /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 		D77C3D98234F6DBE0012678E /* getDocumentWhistler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDocumentWhistler.swift; sourceTree = "<group>"; };
+		D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComentsViewController.swift; sourceTree = "<group>"; };
+		D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				D77C3D8E234F6BA70012678E /* Extensions */,
 				D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */,
 				D77C3D76234D08920012678E /* ViewController.swift */,
+				D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */,
+				D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */,
+				D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,10 +209,13 @@
 				D77C3D73234D08920012678E /* AppDelegate.swift in Sources */,
 				D77C3D89234D26010012678E /* FuncionamentoGravacao.swift in Sources */,
 				D77C3D91234F6BE30012678E /* loadingViewRecorder.swift in Sources */,
+				D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */,
 				D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */,
+				D77C3D9D234FA48F0012678E /* AddComentsViewController.swift in Sources */,
 				D77C3D75234D08920012678E /* SceneDelegate.swift in Sources */,
 				D77C3D97234F6D580012678E /* Permission.swift in Sources */,
 				D77C3D93234F6CAE0012678E /* ButtonRecorder.swift in Sources */,
+				D77C3D9B234FA0050012678E /* SelectGenreViewController.swift in Sources */,
 				D77C3D99234F6DBE0012678E /* getDocumentWhistler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

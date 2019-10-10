@@ -2,10 +2,13 @@ import UIKit
 
 extension RecordWhistleViewController {
     
+        //serve para mudar para tela de escolher qual genero que queremos
         @objc func nextTapped(){
-
+            let selectGenre = SelectGenreViewController()
+            navigationController?.pushViewController(selectGenre, animated: true)
         }
 
+        //serve para regravar o audio, e fazer a animação do button play
        @objc func recordTapped(){
        if whistleRecorder == nil{
        startRecoding()
@@ -21,9 +24,10 @@ extension RecordWhistleViewController {
        }
        }
 
+    
        internal func backButton() {
           //criacao do botao para voltar a tela de gravacao
-          title = "Record yout whistle"
+          title = "Record your whistle"
           navigationItem.backBarButtonItem = UIBarButtonItem(title: "Record", style: .plain, target: nil, action: nil)
           }
 
