@@ -112,7 +112,6 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
         
         do{
             whistleRecorder = try AVAudioRecorder(url: audioURL, settings: settings)
-            print("aqui: \(whistleRecorder)")
             //Tem que coloca o protocolo delegate desse método
             whistleRecorder.delegate = self
             whistleRecorder.record()
