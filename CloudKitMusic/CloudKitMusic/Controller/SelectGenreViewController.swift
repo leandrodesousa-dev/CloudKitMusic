@@ -10,16 +10,20 @@ import UIKit
 
 class SelectGenreViewController: UITableViewController {
 
-    static var genres = ["Unknown", "Blues", "Classical", "Electronic", "Jazz", "Metal", "Pop", "Reggae", "RnB", "Rock", "Soul"]
+    static var genres = ["Unknown", "Blues", "Classical", "Electronic", "Jazz", "Metal", "Pop", "Reggae", "RnB", "Rock", "Soul", "Rapper"]
     
     private let cellID = "cellID"
+    
+    fileprivate func setupTableView() {
+        title = "Select Genre"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Genre", style: .plain, target: nil, action: nil)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Select Genre"
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Genre", style: .plain, target: nil, action: nil)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        setupTableView()
     }
 
     // MARK: - Table view data source
@@ -42,6 +46,7 @@ class SelectGenreViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //verifica quando for selecionado a cell se tem algum valor, se tiver vazio manda o valor desconhecido unknown
         if let cell = tableView.cellForRow(at: indexPath){
             let genre = cell.textLabel?.text ?? SelectGenreViewController.genres[0]
             let addComentsController = AddComentsViewController()

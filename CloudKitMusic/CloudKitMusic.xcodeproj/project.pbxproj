@@ -22,6 +22,8 @@
 		D77C3D9B234FA0050012678E /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */; };
 		D77C3D9D234FA48F0012678E /* AddComentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */; };
 		D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */; };
+		D77C3DA3234FBD120012678E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C3DA2234FBD120012678E /* CloudKit.framework */; };
+		D77C3DA5234FBD950012678E /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3DA4234FBD950012678E /* CloudKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
 		D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComentsViewController.swift; sourceTree = "<group>"; };
 		D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		D77C3DA0234FBCF90012678E /* CloudKitMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitMusic.entitlements; sourceTree = "<group>"; };
+		D77C3DA2234FBD120012678E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		D77C3DA4234FBD950012678E /* CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77C3DA3234FBD120012678E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 			children = (
 				D77C3D71234D08910012678E /* CloudKitMusic */,
 				D77C3D70234D08910012678E /* Products */,
+				D77C3DA1234FBD120012678E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,7 @@
 		D77C3D71234D08910012678E /* CloudKitMusic */ = {
 			isa = PBXGroup;
 			children = (
+				D77C3DA0234FBCF90012678E /* CloudKitMusic.entitlements */,
 				D77C3D8B234F65C10012678E /* Model */,
 				D77C3D8A234F65B30012678E /* View */,
 				D77C3D8C234F65C70012678E /* Controller */,
@@ -105,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				D77C3D8E234F6BA70012678E /* Extensions */,
-				D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */,
 				D77C3D76234D08920012678E /* ViewController.swift */,
+				D77C3D86234D0AFC0012678E /* RecordWhistleViewController.swift */,
 				D77C3D9A234FA0050012678E /* SelectGenreViewController.swift */,
 				D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */,
 				D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */,
@@ -118,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D77C3D88234D26010012678E /* FuncionamentoGravacao.swift */,
+				D77C3DA4234FBD950012678E /* CloudKit.swift */,
 			);
 			path = Comentarios;
 			sourceTree = "<group>";
@@ -132,6 +141,14 @@
 				D77C3D98234F6DBE0012678E /* getDocumentWhistler.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D77C3DA1234FBD120012678E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D77C3DA2234FBD120012678E /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +225,7 @@
 				D77C3D95234F6D0F0012678E /* statusRecorder.swift in Sources */,
 				D77C3D73234D08920012678E /* AppDelegate.swift in Sources */,
 				D77C3D89234D26010012678E /* FuncionamentoGravacao.swift in Sources */,
+				D77C3DA5234FBD950012678E /* CloudKit.swift in Sources */,
 				D77C3D91234F6BE30012678E /* loadingViewRecorder.swift in Sources */,
 				D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */,
 				D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */,
@@ -266,6 +284,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -326,6 +345,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -352,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitMusic/CloudKitMusic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQG7HAF33B;
 				INFOPLIST_FILE = CloudKitMusic/Info.plist;
@@ -370,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitMusic/CloudKitMusic.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQG7HAF33B;
 				INFOPLIST_FILE = CloudKitMusic/Info.plist;

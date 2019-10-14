@@ -3,7 +3,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //metódo que chama outra tela
+    static var isDirty = true
+    
+    //metódo que chama outra tela de gravacao
     @objc func addWhistle() {
            let recordController = RecordWhistleViewController()
            navigationController?.pushViewController(recordController, animated: true)

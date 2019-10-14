@@ -21,20 +21,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.79999999999995" y="113.79310344827587"/>
+            <point key="canvasLocation" x="727" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bzc-lp-mla">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="34s-sR-FbR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="MIs-BA-7r6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uIR-i7-rtm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qO9-XQ-fAX"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pV6-NH-n4e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwU-05-g2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

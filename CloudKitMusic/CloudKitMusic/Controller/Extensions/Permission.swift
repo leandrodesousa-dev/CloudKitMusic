@@ -3,6 +3,7 @@ import AVFoundation
 
 extension RecordWhistleViewController{
     
+    //pede permissao do usuario
     internal func permissionUserRecorder(){
 
           //retorna a instancia do audio gravado
