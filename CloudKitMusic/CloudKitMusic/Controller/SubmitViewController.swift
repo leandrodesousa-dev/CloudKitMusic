@@ -53,7 +53,7 @@ class SubmitViewController: UIViewController {
                 self.status.text = "Done"
                 self.spinner.stopAnimating()
                 
-                ViewController.isDirty = true
+               ListWhistleTableViewController.isDirty = true
         }
                 self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.doneTapped))
             }

@@ -5,10 +5,8 @@ extension RecordWhistleViewController {
     
         //serve para mudar para tela de escolher qual genero que queremos
         @objc func nextTapped(){
-            let selectGenre = SelectGenreViewController()
+            let selectGenre = SelectGenreTableViewController()
             navigationController?.pushViewController(selectGenre, animated: true)
-          //  show(selectGenre, sender: self)
-            print("nao entra")
         }
 
         //serve para regravar o audio, e fazer a animação do button play
@@ -63,7 +61,7 @@ extension RecordWhistleViewController {
 
 }
 
-extension ViewController {
+extension ListWhistleTableViewController {
     
     internal func buttonBackWistle() {
         //criação de botao da pagina incial para gravar e voltar ao home

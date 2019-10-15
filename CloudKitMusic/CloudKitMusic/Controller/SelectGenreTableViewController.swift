@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectGenreViewController: UITableViewController {
+class SelectGenreTableViewController: UITableViewController {
 
     static var genres = ["Unknown", "Blues", "Classical", "Electronic", "Jazz", "Metal", "Pop", "Reggae", "RnB", "Rock", "Soul", "Rapper"]
     
@@ -33,13 +33,13 @@ class SelectGenreViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SelectGenreViewController.genres.count
+        return SelectGenreTableViewController.genres.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID , for: indexPath)
         
-        cell.textLabel?.text = SelectGenreViewController.genres[indexPath.row]
+        cell.textLabel?.text = SelectGenreTableViewController.genres[indexPath.row]
         cell.accessoryType = .disclosureIndicator
         
         return cell
@@ -48,7 +48,7 @@ class SelectGenreViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //verifica quando for selecionado a cell se tem algum valor, se tiver vazio manda o valor desconhecido unknown
         if let cell = tableView.cellForRow(at: indexPath){
-            let genre = cell.textLabel?.text ?? SelectGenreViewController.genres[0]
+            let genre = cell.textLabel?.text ?? SelectGenreTableViewController.genres[0]
             let addComentsController = AddComentsViewController()
             
             addComentsController.genre = genre
