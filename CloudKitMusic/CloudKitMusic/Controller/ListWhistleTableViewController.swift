@@ -118,5 +118,12 @@ class ListWhistleTableViewController: UITableViewController {
         return self.whistles.count
     }
     
+    //quando selecionar uma linha irá mandar a controller que cuida de análise de resultado
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let resultsController = ResultsTableViewController()
+        resultsController.whistle = whistles[indexPath.row]
+        navigationController?.pushViewController(resultsController, animated: true)
+    }
+    
 }
 

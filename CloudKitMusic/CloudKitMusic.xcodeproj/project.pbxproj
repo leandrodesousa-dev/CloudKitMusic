@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D75982E623550EA300B8B0B8 /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75982E523550EA300B8B0B8 /* Whistle.swift */; };
+		D75982E8235554CC00B8B0B8 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75982E7235554CC00B8B0B8 /* ResultsTableViewController.swift */; };
 		D77C3D73234D08920012678E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D72234D08920012678E /* AppDelegate.swift */; };
 		D77C3D75234D08920012678E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D74234D08920012678E /* SceneDelegate.swift */; };
 		D77C3D77234D08920012678E /* ListWhistleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D76234D08920012678E /* ListWhistleTableViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		D75982E523550EA300B8B0B8 /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		D75982E7235554CC00B8B0B8 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		D77C3D6F234D08910012678E /* CloudKitMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77C3D72234D08920012678E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77C3D74234D08920012678E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				D77C3D9A234FA0050012678E /* SelectGenreTableViewController.swift */,
 				D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */,
 				D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */,
+				D75982E7235554CC00B8B0B8 /* ResultsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				D77C3D91234F6BE30012678E /* loadingViewRecorder.swift in Sources */,
 				D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */,
 				D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */,
+				D75982E8235554CC00B8B0B8 /* ResultsTableViewController.swift in Sources */,
 				D77C3D9D234FA48F0012678E /* AddComentsViewController.swift in Sources */,
 				D77C3D75234D08920012678E /* SceneDelegate.swift in Sources */,
 				D77C3D97234F6D580012678E /* Permission.swift in Sources */,
