@@ -13,12 +13,19 @@ class ListWhistleTableViewController: UITableViewController {
            let recordController = RecordWhistleViewController()
            navigationController?.pushViewController(recordController, animated: true)
        }
+    
+    @objc func selectGenre(){
+        let genreController = MyGenresTableViewController()
+        navigationController?.pushViewController(genreController, animated: true)
+    }
        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         buttonBackWistle()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Genres", style: .plain, target: self, action: #selector(selectGenre))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,7 +48,7 @@ class ListWhistleTableViewController: UITableViewController {
         //é um filtro que usarei para ver quais resultados desejo obter
         let predicate = NSPredicate(value: true)
         //informará ao cloudkit qual campo que quero e se quero subir ou descer
-        let sort = NSSortDescriptor(key: "creationDate", ascending: false)
+        //let sort = NSSortDescriptor(key: "creationDate", ascending: false)
         //vai retornar o id do whistles
         let query = CKQuery(recordType: "whistles", predicate: predicate)
         

@@ -33,7 +33,7 @@ class ResultsTableViewController: UITableViewController {
     
     @objc func downloadTapped(){
         //mostra a animacao dizendo que esta carregando os dados do cloudkit
-        let spinner = UIActivityIndicatorView(style: .gray)
+        let spinner = UIActivityIndicatorView(style: .medium)
         spinner.tintColor = UIColor.black
         spinner.startAnimating()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: spinner)
@@ -41,7 +41,7 @@ class ResultsTableViewController: UITableViewController {
         //faz o download do cloudkit, verifica se a busca foi um sucesso ou não, sempre levando para o thread principal por manipular a interface do usuário
         //se foi um sucesso, ele pega o endereco e executa
         CKContainer.init(identifier: "iCloud.CloudKitMusic").publicCloudDatabase.fetch(withRecordID: whistle.recordID) { [unowned self] (record, error) in
-            if let error = error {
+            if error != nil {
                 DispatchQueue.main.async {
                     self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(self.downloadTapped))
                 }

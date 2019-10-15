@@ -7,14 +7,22 @@
 //
 
 import UIKit
+//para pedir permissao do usuario para receber notificacao quando atualizar o icloud
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.        
+        // Override point for customization after application launch.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            if let error = error {
+                print("D'oh: \(error.localizedDescription)")
+            } else {
+                //FIXME: BUG Notification
+                application.registerForRemoteNotifications()
+            }
+        }
         return true
     }
 

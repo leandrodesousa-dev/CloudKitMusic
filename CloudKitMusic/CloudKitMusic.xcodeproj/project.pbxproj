@@ -26,6 +26,7 @@
 		D77C3D9F234FAA6A0012678E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */; };
 		D77C3DA3234FBD120012678E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C3DA2234FBD120012678E /* CloudKit.framework */; };
 		D77C3DA5234FBD950012678E /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77C3DA4234FBD950012678E /* CloudKit.swift */; };
+		D797E5D3235607E600B5EA76 /* MyGenresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D797E5D2235607E600B5EA76 /* MyGenresTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D77C3DA0234FBCF90012678E /* CloudKitMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitMusic.entitlements; sourceTree = "<group>"; };
 		D77C3DA2234FBD120012678E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D77C3DA4234FBD950012678E /* CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
+		D797E5D2235607E600B5EA76 /* MyGenresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGenresTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				D77C3D9C234FA48F0012678E /* AddComentsViewController.swift */,
 				D77C3D9E234FAA6A0012678E /* SubmitViewController.swift */,
 				D75982E7235554CC00B8B0B8 /* ResultsTableViewController.swift */,
+				D797E5D2235607E600B5EA76 /* MyGenresTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				D77C3D87234D0AFC0012678E /* RecordWhistleViewController.swift in Sources */,
 				D75982E8235554CC00B8B0B8 /* ResultsTableViewController.swift in Sources */,
 				D77C3D9D234FA48F0012678E /* AddComentsViewController.swift in Sources */,
+				D797E5D3235607E600B5EA76 /* MyGenresTableViewController.swift in Sources */,
 				D77C3D75234D08920012678E /* SceneDelegate.swift in Sources */,
 				D77C3D97234F6D580012678E /* Permission.swift in Sources */,
 				D77C3D93234F6CAE0012678E /* ButtonRecorder.swift in Sources */,
